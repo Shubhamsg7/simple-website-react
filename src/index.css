@@ -7,7 +7,56 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.animated{
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes up-down {
+  0%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+}
+
+@-webkit-keyframes up-down {
+  0%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+}
+
+.brand{
+  color: #6C63FF;
+}
+
+.button{
+  color: #6C63FF;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: 2px solid #6C63FF;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: .2s ease-in;
+}
+
+.button:hover{
+  background-color: #6C63FF;
+  color: #fff;
+  box-shadow: 2px 2px 4px rgba(107, 99, 255, 0.5);
+}
+
+.active2{
+  color: #17202A;
+  font-weight: bold;
+  border-bottom: 2px solid #17202A;
+}
+
+.navbar-light .navbar-toggler {
+  color: rgba(0,0,0,.55);
+  border-color: rgba(0,0,0,.0);
 }
